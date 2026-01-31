@@ -415,16 +415,23 @@ void TotalBalancesScreen(const vector <stClient>& vClientsData)
     double TotalBalances = 0;
     HeaderOfTotalBalancesTable(vClientsData.size());
     cout << '\n';
-    for (int i = 0; i < vClientsData.size(); i++)
+    if (vClientsData.size() == 0)
     {
-        TotalBalances = TotalBalances + vClientsData[i].AccountBalance;
-        RowOfTotalBalancesTable(vClientsData[i]);
-        cout << endl;
+        cout "There is no Client Data right now!" << endl;
     }
-    cout << '\n';
-    StringLib::HeaderFrame(110);
-    cout << '\n';
-    cout << setw(40) << "" << "Total Balances = " << TotalBalances;
+    else
+    {
+        for (int i = 0; i < vClientsData.size(); i++)
+        {
+            TotalBalances = TotalBalances + vClientsData[i].AccountBalance;
+            RowOfTotalBalancesTable(vClientsData[i]);
+            cout << endl;
+        }
+        cout << '\n';
+        StringLib::HeaderFrame(110);
+        cout << '\n';
+        cout << setw(40) << "" << "Total Balances = " << TotalBalances;
+    }
     PressAnyKeySentence();
 }
 
