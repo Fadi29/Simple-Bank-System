@@ -417,7 +417,7 @@ void TotalBalancesScreen(const vector <stClient>& vClientsData)
     cout << '\n';
     if (vClientsData.size() == 0)
     {
-        cout "There is no Client Data right now!" << endl;
+        cout << "There is no Client Data right now!" << endl;
     }
     else
     {
