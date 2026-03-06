@@ -44,6 +44,6 @@ A quick search feature that retrieves a specific client's details by their uniqu
 ![alt text](<Screenshot 2026-01-31 012005.png>)
 A dedicated sub-menu for financial operations including Deposits, Withdrawals with balance checks, and Total Balance reports.
 
-7. Exit:
+8. Exit:
 ![alt text](<Screenshot 2026-01-31 014432.png>)
 Ensures a clean termination of the program, providing a final status message to the user.
